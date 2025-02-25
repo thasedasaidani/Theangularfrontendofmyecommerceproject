@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-product-list',
   imports: [CommonModule],
-  templateUrl: './product-list.component.html',
+  /* templateUrl: './product-list.component.html', */
+  templateUrl: './product-list-table.component.html',
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent implements OnInit {
