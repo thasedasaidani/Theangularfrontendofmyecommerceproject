@@ -10,6 +10,7 @@ export class Product {
         public  unitsInStock: string,
         public dateCreated: Date,
         public lastUpdate: Date,
+        public imageUrl:string,
     ){
 
     }

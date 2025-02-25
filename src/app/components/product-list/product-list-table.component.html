@@ -5,10 +5,11 @@
         <th>Name</th>
         <th>Description</th>
         <th>Unit Price</th>
-        <th>Active</th>
+        <!-- <th>Active</th> -->
         <th>Units In Stock</th>
         <th>Date Created</th>
         <th>Last Update</th>
+        <th> image  </th>
       </tr>
     </thead>
     <tbody>
@@ -17,10 +18,13 @@
         <td>{{ product.name }}</td>
         <td>{{ product.description }}</td>
         <td>{{ product.unitPrice | currency:'USD' }}</td>
-        <td>{{ product.active }}</td>
+        <!-- <td>{{ product.active }}</td> -->
         <td>{{ product.unitsInStock }}</td>
         <td>{{ product.dateCreated | date:'dd/MM/yyyy HH:mm' }}</td>
         <td>{{ product.lastUpdate | date:'dd/MM/yyyy HH:mm' }}</td>
+        <td>
+            <img [src]="product.imageUrl"  width="80">
+        </td>
       </tr>
     </tbody>
   </table>
